@@ -28,6 +28,7 @@ mod settings {
 }
 
 #[derive(StructOpt)]
+/// A GitHub CLI that focuses on performing tasks across several repositories at the same time
 enum Commands {
     #[structopt(name = "close-milestone")]
     /// Close the given milestone for all configured repositories
